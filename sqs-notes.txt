@@ -1,0 +1,13 @@
+SQS 
+1st aws service
+message queue
+256kb max size
+14 days max time in queue
+
+Long polling will save money by polling then waiting for a certian timeout or something to apprear in the Q  if the Q is empty
+Pull based system
+Can help autoscale number ec2 instances
+Great for relibility by decoupling components
+
+Standard Queues & FIFO queues
+standard cannot guarentee the order messages are sent out

@@ -1,0 +1,11 @@
+SNS - simple notification system
+pub-sub 
+eliminates need to poll
+SNS is PUSH SQS is POLL
+can email, text, or send to http, or send to sqs
+messages are stored across multi AZ
+
+Topics group multiple recipients and endpoints to recieve notifications from one event
+
+Pricing broken down by delivery type, SMS, Email, Http, etc..
+

@@ -1,0 +1,119 @@
+RDS - relational DBS
+DynamoDB - non relational
+Elasticache - cache frequently accessed data
+Red Shit - Datawarehose / expensive queries
+
+VPC - Virtual data center VERY IMPORTANT
+Cloudfront - CDN
+Route53 - AWS DNS
+API Gateway - Creating APIS
+Direct Connect - Dedicated line from office into AWS VPC
+
+CodeStar - Project mgmt for code - collaboration
+Codecommit - Src control
+codebuild - build pipline
+codeDeploy 
+codePipline
+X-Ray - Debug serverless applications
+Cloud9 - IDE
+
+
+*Cloudwatch - VERY IMPORTANT
+*CloudFormation - YAML scripting for infrastructure - infrastructure to code
+*CloudTrail - Logs of all changes to AWS environment - on by default
+*Config - monitors config of your entire aws setup
+*Trusted Advisor - Gives advice around security - tells you how to save money
+
+MEDIA
+Elastic Transcode - takes video and resizes for all devices
+
+MACHINE LEARNING - not in exam
+sage maker - deep learning neural networks
+comprehend
+deeplens - camera can figur out what its looking at - physical hardware
+LEX - powers Alexa
+Machine Learning - uses pre defined data sets
+Polly - Text to speech
+Rekognition - tells you what is in a photo
+Amazon Translate - translation
+Transcribe - add closed captions
+
+ANALYTICS
+Athena - sql query in s3
+*EMR - process large amounts of data
+CloudSearch - 
+ElasticSearch -
+Kinesis - ingest large amounts of data into aws ( tweets, social media feeds, )
+*Kineses Video Streams - 
+QuickSight - Business intellgence tool
+*DataPipeline - move data between different aws services
+Glue - ETL
+
+SECURITY & IDENTITY & COMPLIANCE
+*IAM -
+Cognito - device, user auth
+GuardDuty - monitor for malicious activiy on AWS account
+*Inspector - install on ec2 and run security checks
+Macie - Scan s3 for personal information
+*Certificate manager - free ssl certs
+*CloudHSM - hardware security module - dedicated hardware for storing encryption keys
+Directory Service - Integrate microsoft active directory into aws
+*WAF - web application firewall - stop sql injection - stop XSS
+Shield - installed by default DDOS mitigation
+Artifact - Download AWS compliance reports
+
+MOBILE SERVICES
+Mobile Hub
+Pinpoint - targeted push notifications
+App sync - update data on mobile apps
+Device Farm - test apps on real devices
+Mobile Analytics -
+
+AR/VR
+Sumerian
+
+APPLICATION INTEGATION
+Step functions
+MQ
+*SNS - notification service - send us message when our bill is over 10$
+*SQS - Queue - ec2 poll queue -> do something - decouple infrastructure
+*SWF - Workflow job
+
+CUSTOMER ENGAGEMENT
+Connect - Contact center as service
+*Simple Email Service - Send emails
+
+BUSINESS PRODUCTIVITY
+Alexa for business - dial into meeting room, reorder ink for printer, etc
+Chime - Video conferencing
+*Work Docks - Dropbox for AWS
+WorkMail - Office 365
+
+DESK && APP STEAM
+workspaces - Cloud Desktop Env
+Appstream 2 - Run application in the cloud and steam to device
+
+IOT
+iot device management -
+FreeRtot - operating system for micro controllers
+Greengrass - 
+
+GAME DEVELOPMENT
+GameLift - help you develop games
+
+
+NEED TO KNOW FOR EXAM
+Solutions Architect Associate
+	Global Infrastructure
+	Compute
+	storage
+	Databases
+	Migration
+	Network & CDN
+	Management Tools
+	Analytics
+	Security & Identity & compliance
+	Application Integration
+	Desktop & App Streaming
+
+ 

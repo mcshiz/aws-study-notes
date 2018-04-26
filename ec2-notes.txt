@@ -1,0 +1,37 @@
+Virtual machines in the cloud
+pay only for capacity you use
+
+OPTIONS - 4 types
+on Demand - most popular - fixed rate by hour (by second for linux instances)
+reserved - sign 1-3 year contract pay some $ upfront
+spot - bid on how much you are willing to pay
+	if spot below bid you 
+dedicated - physical ec2 dedicated hosts
+
+on demand - spikey usage
+reserved - predictable usage
+	convertable reserved allows you to change some attributes
+
+m4 general purpose default main choice
+t2 - lowest cost general purpose
+
+DR MC GIFT PX
+
+EBS - storage volumes that you attach to ec2
+can install os on them
+EBS TYPES
+GP2 - general purpose SSD
+IO1 - i/o intensive applications
+ST1 - throughput optimized - big data (spinning drives) - cant be boot volume
+SC1 - Lowest cost - infrequently accesses - File Servers - cant be boot volume
+Standard - Bootable - magnetic drive - lowerst cost
+
+EFS - shared storage between ec2 instances
+
+STUDY TIPS
+know differences between ec2 types
+spot - if you terminiate you pay for rest of hour
+	   aws terminates theny ou get hour of termination free
+EBS types
+1 to 1 EBS to EC2
+ 

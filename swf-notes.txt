@@ -1,0 +1,2 @@
+SWF
+only assigned once and NEVER duplicated - this is the main difference between SWF and SQS

@@ -1,0 +1,13 @@
+Iam can be connected to Facebook, Linkin, Active Directory etc (Federated)
+Supports MFA
+Supports temporary access
+Setup an manange own password rotation policy
+Universal - not region specific
+Root - admin access by default
+Always enable MFA on root account
+
+Users - End users (people)
+Group - Collection of users under one set of permissions (Finance group, HR Group)
+*Roles - can be temp users or other aws services (create role to allow ec2 to access s3)
+Policies - Think permissions -  attach to users, group, and roles - JSON notation
+

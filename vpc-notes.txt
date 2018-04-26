@@ -1,0 +1,23 @@
+VERY VERY IMPORTANT
+think of VPC as virtaul data center in the cloud
+create virtual network of AWS services
+security groups or NACLS
+can create VPN connection from office to aws data center
+1 AZ per subnet 
+1 internet gateway per VPC
+NACL block specifc IP's
+security group can span subnets and az's
+
+default vpc is setup by amazon upon account creation and defualt to have internet access
+
+must have 1 nat gateway per AZ
+
+1 subnet -> 1 az -> 1 nacl
+
+one to many acl to subnet
+NACL are stateless
+	stateless means you have to open it up for inbound and outbound
+Subnets are stateful
+	stateful means if you open an inbound port outbound will automatically be opened too
+
+Load Balancers MUST be placed into two internet facing subnet groups across multiple azs

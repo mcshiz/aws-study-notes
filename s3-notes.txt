@@ -1,0 +1,39 @@
+SIMPLE STORAGE SERVICE #VERY IMPORTANT
+Each account can have a maximum of 100 buckets
+belongs to global region but buckets belong to regions
+object storage
+highly scalable
+(place to store files in the cloud)
+data is spread across multiple devices and facilities
+5tb max file size
+0 bytes is the minimum file size
+unlimited storage
+Files are stored in buckets (folders)
+Bucket names must be globally unique (across all users of AWS)
+receive http 200 upon successful upload
+
+After uploading file initially you get immediate access to read
+After editing you don't have immediate access to read as the updates have to propagate
+to all places where file is stored
+
+Subresources - ACL - can add to individual files or buckets
+S3 supports torrent protocol
+
+Has Tiered Storage
+	s3 - normal
+	s3 IA - Infrequently accessed (lower fee)
+	Reduced Redundancy - cheaper (used for less important data)
+	Glacier - 3-5 hours to view data (very cheap, 1 cent per gig, min storage duration 90 days)
+supports encryption, versioning, lifecycle mgmnt
+
+Charged for Storage, number of requests, storage mgnt pricing (tags for things in s3 charged per tag)
+	Data transfer pricing
+	Transfer Acceleration - fast secure transfer over long distances
+
+https://s3-[REGION-NAME].amazonaws.com/[BUCKET-NAME]
+
+Key (name)
+Value (data)
+Version ID
+MetaData
+Subresources (acl, torrent)

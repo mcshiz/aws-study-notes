@@ -1,0 +1,21 @@
+ Alias records map naked domain to elb
+ ELB does not have pre defined ipv4
+ Alias records do not have associated charge but cname does
+ in exam questions pretty much always choose alias over cname
+does not belong to region is a global policy
+POLICY TYPES
+ Simple - 1 webserver - user -> route53 -> webserver 
+ weighted - user -> route53 -> 20% to server A, 80% to server B (A/B testing) - split traffic based on different weights assigned
+ latency - route based on lowest latency for user 
+ failover - have servers in two regions, if health check fails in primary region it will send 
+ traffic to secondary region - requires you to setup healthcheck in route53
+ geolocation - route traffic based on geolocation of users (euro users go to euro servers, good for showing euros vs dollars, different languages etc..)
+
+
+EXAM TIPS
+ ELB never have ipv4 just DNS
+ alias vs cname
+ 	alias can resolve to different aws resources
+ By default one account can only have 50 domain names
+
+ 

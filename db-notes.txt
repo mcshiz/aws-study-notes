@@ -1,0 +1,74 @@
+OLTP vs OLAP
+transaction processing vs analytics processing (expensive queries)
+
+Elasticache (top 10 products on your website)
+memcached or redis
+used to relieve DB of frequent queries
+
+RDS - OLTP
+ SQL
+ MySQl
+ Postgres
+ oracle
+ aurora
+ maria
+DynamoDB - nosql
+Redshift - datawarehouse - OLAP
+Elasticache - in memory cache
+
+Mysql port 3306
+encryption not available in t2 micro
+
+for ec2 to connect to mysql must allow access in the security group
+
+two tpyes of backups
+	automated - full daily snapshot (point in time recover) - enabled by default - free storage in s3
+	snapshots - user initiated wont be deleted when RDS instance is deleted
+
+restoring from backup will create new DB endpoint
+backups are encrypted if encryption is turned on
+cannot turn on encryption after instance is started
+
+MULTI AZ - exact copy
+syncs everything from RDS in az 1 to RDS in az 2
+for disaster recovery only
+6TB max RDS volume size
+No charge for replicating data to secondary RDS instance
+Read replica
+spread load across multiple RDS
+provide read only copy of production DB
+not available for SQL or oracle
+must have auto backups turned on
+can have up to 5 read replicas
+can be promoted to their own DB (will break read replication)
+can be provisioned across AZ's
+
+DynamoDB only know at highlevel for SA exam
+nosql db
+very low latency
+stored on SSD
+spread across 3 difference data centers
+ eventual consisten reads - consistency of data reached w/i 1 second (faster read after write)
+ strongly consistent reads - waits for data to be propagated across all data centers
+priced by writes and reads and storage used
+Push button scaling (easier to scale than RDS)
+
+Redshift - Datawarehouse
+ single node max size 160gb
+ organizes data by columns
+ compared to RDS fewer i/o and better query performace
+ better compression than RDS
+ automatic compression
+ priced based on compute node hours, backup, vpc
+ everythng is encrypted
+ only available in 1az
+
+Elasticache
+ cache popular queries in memory (reduce load off DB)
+ Memcached and Redis
+
+Aurora - probably wont be on exam just yet
+ 5x better performance that mysql
+ starts with 10g, scales in 10g increments up to 64tb
+ highly redundant
+ 

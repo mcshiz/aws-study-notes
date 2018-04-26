@@ -1,0 +1,12 @@
+Kinesis
+
+Kinesis Steams stores by default for 24 hours max 7 days
+Stearms comnsist of stards 
+Consumers (think ec2) grab data and analyize
+
+Kinesis Firehose
+data producers -> Firehose (no shards, no streams) -> s3, redshift, elasisearch
+w/ firehose data does not get stored it must be analyized immediately
+
+Kinesis Analytics
+run sql queries on data inside firehose then send data to s3, redshift, elastisearch
